@@ -1,0 +1,121 @@
+body {
+    background-color:rgb(128,128,128);
+    font-family: Lucida Console, monospace;
+    font-size:small;
+}
+
+p.narrow-text {
+    margin:3px;  
+}
+
+output {
+    font-weight: bold;    
+}
+
+div#header {
+    height:20px;    
+}
+
+div#bg, div#fg { 
+    position:relative;
+}
+
+div#bg {
+    border: 0px solid rgb(0,0,0);
+    border-radius:12px 12px 0px 0px;
+    padding: 2px;
+    margin: 14px 2px 2px 2px;
+}
+
+div#fg {
+    border-radius: 100%;
+    margin:2px;
+}
+
+div#bg, #bg-button { 
+    background-color: rgb(0, 0, 0);
+}
+
+div#fg, #fg-button { 
+    background-color: rgb(255, 255, 255);
+}
+
+/* picker */
+div#picker-container {
+    position: relative;
+    margin:2px;
+    padding:2px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 0px 0px 10px 10px;
+    width: 328px;
+}
+
+div.picker {
+    border-right: 1px solid #adadad;
+    margin-top: 10px;
+    margin-bottom:12px;
+    padding:2px 8px 0px 16px;
+    width:70px;
+    
+}
+
+.color-picker { 
+    position: relative;
+    border:0px;
+    border-radius: 25%;
+    display: inline-block;
+    width:16px;
+    height: 16px;
+    margin: 2px 0px 0px 2px;
+}
+
+#fg-button {
+    left: 5px;
+    top: -9px;
+}
+
+#bg-button {
+    left: 12px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.color-palette {
+    position:relative;
+    display:inline-block;
+    padding: 16px 10px 14px 10px;
+    width: 260px;
+    border-radius: 5px;
+}
+
+.color-palette > div {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: 2px;
+    border-radius: 20%;
+    opacity: 0.80;
+}
+
+.color-palette > div:hover {
+    opacity: 1;
+}
+
+#palette {
+    left:0px;
+    top:0px;
+}
+
+.color-picker.active {
+    box-shadow:0px 0px 3px white;
+}
+
+button#reset-button {
+    position:relative;
+    top:4px;
+    background-color:rgba(255,255,255,0.25);
+    width: 40px;
+    border: 1px solid grey;
+    padding: 0px 2px 0px 2px;
+}
