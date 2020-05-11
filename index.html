@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/color.css" type="text/css" >
+    <script src="js/color.js"></script>
+    <title>Visual Threshold</title>
+  </head>
+  <body>
+      <div class="container">
+        <div class="row"  id="header"></div>
+          <div class="row">
+            <div class="col-sm" id="left-col"></div>
+            <div class="col-sm" id="mid-col">
+              <div id="instructions">
+                <p>Click the circle as many times as you can with few misses as possible, as it fades into the background.</p>
+                <p class="narrow-text">Hits: <output id="hits">0</output> Misses: <output id="misses">0</output></p>
+                <p class="narrow-text">Opacity: <output id="current-opacity">1.0</output></p>
+                <p class="narrow-text">Color Discrimination Threshold: <output id="opacity">1.000</output></p>
+              </div>
+                <div class="color bg-color" id="bg">
+                    <div class="color fg-color" id="fg"></div>
+                </div>
+
+                <div class="d-flex flex-row" id="picker-container">
+                  <div class="picker">
+                    <div class="color-picker bg-color" id="bg-button"></div>
+                    <div class="color-picker fg-color" id="fg-button"></div>
+                    <button id="reset-button">reset</button>
+                  </div>
+                  <div class="color-palette" id="palette"></div>
+                </div>
+            </div>
+            <div class="col-sm" id="right-col"></div>
+          </div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>
